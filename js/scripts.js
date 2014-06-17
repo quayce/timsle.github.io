@@ -1,7 +1,7 @@
 /* activate scrollspy menu */
 $('body').scrollspy({
   target: '#navbar-collapsible',
-  offset: 51
+  offset: 55
 });
 
 /* smooth scrolling sections */
