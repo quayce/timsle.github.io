@@ -11,7 +11,7 @@ author: bootply.com
 
 html,body {
 	height:100%;
-    background:center no-repeat fixed url('/assets/example/bg_suburb.jpg');
+    background:center no-repeat fixed url('../assets/example/bg_suburb.jpg');
 }
 
 .icon-bar {
@@ -51,9 +51,7 @@ html,body {
 section {
 	padding-top:70px;  
     padding-bottom:50px; 
-    min-height:calc(100% - 50px);
 }
-
 .v-center {
     padding-top:10%;
     font-size:70px;
@@ -71,6 +69,7 @@ a.list-group-item.active,[class*='-info'] {
 #section1 {
 	background-color: #168ccc;
     color:#dedeff;
+    min-height:calc(100% - 50px);
 }
 #section1 h1 {
 	padding-top:0;
