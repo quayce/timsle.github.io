@@ -1,17 +1,6 @@
-/*
-A custom Bootstrap 3.1 template
-from http://bootply.com
-
-This CSS code should follow the 'bootstrap.css'
-in your HTML file.
-
-license: MIT
-author: bootply.com
-*/
-
 html,body {
 	height:100%;
-    background:center no-repeat fixed url('../assets/example/bg_suburb.jpg');
+    background:center no-repeat fixed url('../img/intro-bg.png');
 }
 
 .icon-bar {
@@ -21,13 +10,15 @@ html,body {
   border-radius: 0;
 	margin-bottom:0;
 }
+.navbar .container-fluid {
+	margin:auto;
+}
 .navbar-trans {
-	background-color:#279ddd;
+	background-color:#201205;
     color:#fff;
 }
-
 .navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
-	background-color:#38afef;
+	background-color:#A04C0E;
 }
 
 .navbar-trans a{
@@ -49,8 +40,8 @@ html,body {
 }
 
 section {
-	padding-top:70px;  
-    padding-bottom:50px; 
+	padding-top:20px;  
+    padding-bottom:30px; 
 }
 .v-center {
     padding-top:10%;
@@ -65,37 +56,54 @@ a.list-group-item.active,[class*='-info'] {
 	background-color: #168ccc;
     color:#fff;
 }
-  
+ 
 #section1 {
-	background-color: #168ccc;
-    color:#dedeff;
+	padding-top:70px; 
+    color:#000;
     min-height:calc(100% - 50px);
 }
 #section1 h1 {
 	padding-top:0;
+	padding-bottom:60px;
 }
-#section2 {
-	background-color: #e5e5ef;
+section.gray {
+	background-color: #EFE6DC;
     color:#686868;
 }
-  
-#section3 {
-	background-color: #168ccc;
-    color:#ddd;
+section.orange {
+	background-color: #E07826;
+    color:#FFF;
 }
 
-#section4 {
+section.white {
 	background-color: #fff;
     color:#444;
 }
 
-#section5,#section7 {
-    color:#f5f5f5;
+.panel .panel-heading {
+	background-color:#201205;
+	color: #FFF;
 }
-
-#section6 {
-	background-color: #168ccc;
-    color:#ddd;
+.panel .panel-heading h2.panel-title {
+	font-size: 200%;
+}
+.mc-field-group label {
+}
+input, select {
+    background-color:white;
+    color: #888;
+    border: 1px solid #ccc;
+    font-family: Cantarell, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 100%;
+    height: 35px;
+    padding: 0 25px;
+    margin: 0 0 20px 0;
+    
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
 }
 
 footer {
