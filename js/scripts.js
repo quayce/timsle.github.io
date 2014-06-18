@@ -36,3 +36,38 @@ $(function(){
     }
   });
 });
+
+$( document ).ready(function() {
+	(function( $ ){
+	   $.fn.replaceDescription = function() {
+			var className = $(this).attr('class');
+			var description = $("<div id='timsle-btn-description'></div>").hide();
+			
+			description.addClass(className +'-faded')
+			switch(className){
+		  		case 'red':
+					description.append('<h2>test</h2>');
+					description.append('<p>this is the description of the red element</p>');
+				case 'blue':
+
+				case 'green':
+
+				case 'orange':
+				
+	   		}
+			$("div#timsle-btn-description").replaceWith(description);
+			$("div#timsle-btn-description").slideDown("slow");
+	   }; 
+	})( jQuery );
+
+	$(".timsle-buttons li:first").replaceDescription();
+
+    $( ".timsle-buttons li" ).click(function() {
+   		$(this).hide().prependTo('.timsle-buttons').slideDown("slow");
+		$(this).replaceDescription();
+	});
+	
+	
+
+});
+
