@@ -19,6 +19,9 @@ $('a[href*=#]:not([href=#])').click(function() {
 });
 
 $( document ).ready(function() {
-	
+	$('#nav-who').on('activate.bs.scrollspy', function () {
+		$('body').removeClass();
+		$('body').addClass('green');
+	});
 });
 
