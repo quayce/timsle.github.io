@@ -207,6 +207,9 @@ section h2 {
 .no-color {
 	background-color:transparent;
 }
+#community {
+    background:center no-repeat url('../img/background.jpg');
+}
 
 footer {
 	background-color:#494949;
