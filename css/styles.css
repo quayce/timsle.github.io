@@ -8,7 +8,11 @@ html,body {
 }
 .navbar {
   border-radius: 0;
-	margin-bottom:0;
+  margin-bottom:0;
+  position: fixed;
+  top: 0;
+  width:100%;
+  z-index:100;
 }
 .navbar .container-fluid {
 	margin:auto;
@@ -33,10 +37,6 @@ html,body {
 }
 
 .fix {
-  position: fixed;
-  top: 0;
-  width:100%;
-  z-index:100;
 }
 
 section {
@@ -89,6 +89,7 @@ section.white {
 }
 .mc-field-group label {
 }
+
 input, select {
     background-color:white;
     color: #888;
@@ -106,58 +107,7 @@ input, select {
     -webkit-border-radius: 6px;
 }
 
-.timsle-buttons {
-  margin: 0 auto;
-  padding: 0;
-  width:200px;
-  height:200px;
-  list-style-type: none;
-  float:left;
-}
-.timsle-buttons li {
-  height: 50%;
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  float:right;
-}
-.red {
-  background-color:rgba(255, 0, 0, 1);
-}
-.red-faded {
-  background-color:rgba(255, 0, 0, 0.7);
-}
-.blue {
-  background-color:rgba(0, 0, 255, 1);
-}
-.green {
-  background-color:rgba(0, 128, 0, 1);
-}
-.orange {
-  background-color:rgba(255, 165, 0, 1);
-}
-.red-faded {
-  background-color:rgba(255, 0, 0, 0.7);
-}
-.blue-faded {
-  background-color:rgba(0, 0, 255, 0.7);
-}
-.green-faded {
-  background-color:rgba(0, 128, 0, 0.7);
-}
-.orange-faded {
-  background-color:rgba(255, 165, 0, 0.7);
-}
 
-#timsle-btn-description {
-	width:calc(100%-200px);
-	margin-left:200px;
-	height:200px;
-	padding:10px;
-}
-#timsle-btn-description h2 {
-	margin: 0;
-}
 
 footer {
 	background-color:#494949;
@@ -176,19 +126,5 @@ footer .nav>li>a {
 footer .nav>li>a:hover {
     background-color:transparent;
 	color:#fff;
-}
-@media (max-width:640px) {
-
-#timsle-btn-description {
-	width:100%;
-	margin-left:0;
-	height: auto;
-	clear:both;
-	padding: 15px;
-}
-.timsle-buttons {
-  float:none;
-}
-
 }
 
