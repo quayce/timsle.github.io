@@ -21,7 +21,11 @@ html,body {
 text-transform:uppercase;
 }
 .navbar-trans li>a:hover,.navbar-trans li>a:focus,.navbar-trans li.active {
-	background-color:#A04C0E;
+	background-color:#DD6A0F;
+	color:#FFF;
+}
+.navbar-trans li.active a {
+	color:#FFF;
 }
 
 .navbar-trans .form-control:focus {
@@ -92,14 +96,15 @@ a.list-group-item.active,[class*='-info'] {
     color:#fff;
 }
  
-#section1 {
-	margin-top:50px; 
-    color:#000;
-    min-height:calc(100% - 50px);
+#what {
+	margin-top:50px;
+	background-color:#F8E1CF;
+	color:#DD6A0F;
+    min-height:calc(100% - 100px);
 }
-#section1 h1 {
-	padding-top:0;
-	padding-bottom:60px;
+
+#what h2 {
+	padding-bottom: 20px;
 }
 section.gray {
 	background-color: #EFE6DC;
