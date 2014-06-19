@@ -44,6 +44,7 @@ $( document ).ready(function() {
 	$('#primarynavbar').on('activate.bs.scrollspy', function () {
 	   var activeID = $(this).find("li.active").attr("id");
 	   switchColor(activeID);
+		$('.navbar-trans li>a').blur();/*this prevents two tabs being highlighted at the same time*/
 	});
 });
 
