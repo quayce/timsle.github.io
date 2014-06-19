@@ -18,10 +18,32 @@ $('a[href*=#]:not([href=#])').click(function() {
     }
 });
 
-$( document ).ready(function() {
-	$('#nav-who').on('activate.bs.scrollspy', function () {
-		$('body').removeClass();
-		$('body').addClass('green');
+$( document ).ready(function() { 
+
+	function switchColor (activeID) {
+		$('body').removeClass();/*reverts it back to orange*/
+		switch(activeID){ /*applies new color if necessary*/
+			case 'nav-who':
+				$('body').addClass('green');
+				break;
+			case 'nav-give':
+				$('body').addClass('red');
+				break;
+			case 'nav-price':
+				$('body').addClass('blue');
+				break;
+			case 'nav-community':
+				$('body').addClass('purple');
+				break;
+		}
+		
+	}
+
+	switchColor ($('#primarynavbar').find("li.active").attr("id"))
+
+	$('#primarynavbar').on('activate.bs.scrollspy', function () {
+	   var activeID = $(this).find("li.active").attr("id");
+	   switchColor(activeID);
 	});
 });
 

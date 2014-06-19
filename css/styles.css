@@ -31,17 +31,9 @@ text-transform:uppercase;
 .navbar-trans .button  {
 	color:#FFF !important;
 }
-.navbar-trans li#nav-what>a:hover,
-.navbar-trans li#nav-what.active {
-	background-color:#DD6A0F;
-}
 .navbar-trans li#nav-who>a:hover,
 .navbar-trans li#nav-who.active {
 	background-color:#01882A;
-}
-.navbar-trans li#nav-how>a:hover,
-.navbar-trans li#nav-how.active {
-	background-color:#DD6A0F;
 }
 .navbar-trans li#nav-give>a:hover,
 .navbar-trans li#nav-give.active {
@@ -56,6 +48,17 @@ text-transform:uppercase;
 	background-color:#773E9C;
 }
 
+.navbar-trans li,
+.nav-footer-brand,
+.navbar-trans a,
+.navbar-trans input {
+	color:#DD6A0F;
+	border-color:#DD6A0F;
+}
+.navbar-trans .button {
+	background-color:#DD6A0F;
+}
+
 .green .navbar-trans li,
 .green .nav-footer-brand,
 .green .navbar-trans a,
@@ -66,8 +69,36 @@ text-transform:uppercase;
 .green .navbar-trans .button {
 	background-color:#01882A;
 }
-
-
+.red .navbar-trans li,
+.red .nav-footer-brand,
+.red .navbar-trans a,
+.red .navbar-trans input {
+	color:#C82506;
+	border-color:#C82506;
+}
+.red .navbar-trans .button {
+	background-color:#C82506;
+}
+.blue .navbar-trans li,
+.blue .nav-footer-brand,
+.blue .navbar-trans a,
+.blue .navbar-trans input {
+	color:#0365C0;
+	border-color:#0365C0;
+}
+.blue .navbar-trans .button {
+	background-color:#0365C0;
+}
+.purple .navbar-trans li,
+.purple .nav-footer-brand,
+.purple .navbar-trans a,
+.purple .navbar-trans input {
+	color:#773E9C;
+	border-color:#773E9C;
+}
+.purple .navbar-trans .button {
+	background-color:#773E9C;
+}
 
 .navbar-trans .form-control:focus {
 	border-color: #eee;
