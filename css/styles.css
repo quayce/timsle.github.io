@@ -209,6 +209,7 @@ section h2 {
 }
 #community {
     background:center no-repeat url('../img/background.jpg');
+	background-size:contain;
 }
 
 footer {
